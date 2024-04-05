@@ -5,10 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primi Passi</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: lightpink;
+            overflow: hidden;
+        }
+
+        nav {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: black;
+            height: 27%;
+        }
+
+        ul {
+            z-index: 10;
+        }
+
+        li {
+            color: white;
+        }
+
+        img {
+            position: absolute;
+            top: -25%;
+            left: 0;
+            right: 0;
+            width: 100vw;
+        }
+
+        .reverse {
+            transform: scaleY(-1);
+            position: absolute;
+            top: 38%;
+            left: 0;
+            right: 0;
+            width: 100vw;
+            z-index: -1;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>PROVA</h1>
+    <div>
+        <img src="/img/maschera-tokyo.svg" alt="">
+    </div>
+    <nav>
+        <div class="container">
+            <h1 class="d-flex justify-content-center text-white">PRIMI PASSI</h1>
+            <ul class="d-flex list-unstyled justify-content-center gap-5">
+                <li><a href=""> HOME</a></li>
+                <li><a href="{{route('about')}}"> ABOUT</a></li>
+                <li><a href=""> BOOKS</a></li>
+                <li><a href=""> BLOG</a></li>
+                <li><a href=""> VIDEOS</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div>
+        <img class="reverse" src="/img/maschera-tokyo.svg" alt="">
+    </div>
+
+
+
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
