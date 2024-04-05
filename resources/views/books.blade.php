@@ -11,7 +11,7 @@
 
     <style>
         body {
-            background-color: #d2daee;
+            background-color: #f4e1ea;
             overflow: hidden;
         }
 
@@ -63,14 +63,15 @@
     </div>
     <nav>
         <div class="container">
-            <h1 class="d-flex justify-content-center text-white display-3 mt-3">PRIMI PASSI</h1>
+            <h1 class="d-flex justify-content-center display-5 text-white mt-2">PRIMI PASSI</h1>
             <ul class="d-flex list-unstyled justify-content-center gap-5">
                 <li><a href="{{route('home')}}"> HOME</a></li>
                 <li><a href="{{route('about')}}"> ABOUT</a></li>
-                <li><a href="{{route('books')}}"> BOOKS</a></li>
                 <li><a href="{{route('blog')}}"> BLOG</a></li>
                 <li><a href="{{route('videos')}}"> VIDEOS</a></li>
             </ul>
+
+            <div class="text-center text-white">BOOKS: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aspernatur similique voluptates. Eligendi hic provident quae fugiat, alias, temporibus ad magni obcaecati voluptas eveniet nesciunt, earum neque beatae facilis rerum?</div>
         </div>
 
     </nav>
